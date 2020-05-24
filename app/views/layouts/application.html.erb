@@ -56,6 +56,10 @@
       window.I18n = <%= current_translations.to_json.html_safe %>
       window.I18nFallback = <%= fallback_translations.to_json.html_safe %>
     </script>
+    <style>
+		div.header{height:95px;}
+		.header-brand-img{ height: 4rem; }
+	</style>
   </head>
 
   <body class="app-background" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>" data-relative-root="<%= Rails.configuration.relative_url_root || "/" %>">
